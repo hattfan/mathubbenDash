@@ -13,12 +13,13 @@ d3.queue()
     return {
       kommun: row.Kommun,
       kommunKod: row.Kommunkod,
-      data: +row.Procent
+      kopData: +row.Procent
     }
   })
   .await(function (error, mapData, data) {
     if (error) throw error;
 
+    var geoData = topojson.feature(mapData, mapData.objects.sverige).features;
     // console.log('test await function')
 
     // console.log(data)
@@ -34,7 +35,7 @@ d3.queue()
 
     createMap(width, height);
 
-    drawMap(mapData, data)
+    drawMap(geoData, data)
   });
 
 // d3.json('sverige.topojson', function(data) {
