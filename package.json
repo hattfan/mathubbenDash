@@ -1,0 +1,23 @@
+{
+  "name": "dashboardexpress",
+  "version": "1.0.0",
+  "description": "test för dashboard i express",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hattfan/mathubbenDash.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hattfan/mathubbenDash/issues"
+  },
+  "homepage": "https://github.com/hattfan/mathubbenDash#readme",
+  "dependencies": {
+    "ejs": "^2.5.9",
+    "express": "^4.16.3"
+  }
+}
